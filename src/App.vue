@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
-</script>
-
 <template>
   <div id="app">
     <header>
@@ -14,13 +9,19 @@ import TheWelcome from "./components/TheWelcome.vue";
         height="125"
       />
 
-      <div class="wrapper">
-        <HelloWorld msg="You did it!" />
-      </div>
+      <div class="wrapper"></div>
     </header>
 
     <main>
-      <TheWelcome />
+      <form-io
+        ref="formioForm"
+        src="http://localhost:3001/form/639ce61bc69806cc78b482bc"
+        url="http://localhost:9000/forms"
+        form=""
+        submission=""
+        :options="options"
+        language="en"
+      ></form-io>
     </main>
   </div>
 </template>
