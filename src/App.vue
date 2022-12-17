@@ -1,27 +1,38 @@
 <template>
   <div id="app">
     <header>
-      <img
-        alt="Vue logo"
-        class="logo"
-        src="./assets/logo.svg"
-        width="125"
-        height="125"
-      />
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center">
+            <img
+              alt="Vue logo"
+              src="./assets/logo.svg"
+              width="125"
+              height="125"
+            />
+          </div>
+        </div>
+      </div>
 
       <div class="wrapper"></div>
     </header>
 
     <main>
-      <form-io
-        ref="formioForm"
-        src="http://localhost:3001/form/639ce61bc69806cc78b482bc"
-        url="http://localhost:9000/forms"
-        form=""
-        submission=""
-        :options="options"
-        language="en"
-      ></form-io>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form-io
+              ref="formioForm"
+              src="http://localhost:3001/form/639ce61bc69806cc78b482bc"
+              url="http://localhost:9000/forms"
+              form=""
+              submission=""
+              :options="options"
+              language="en"
+            ></form-io>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </template>
