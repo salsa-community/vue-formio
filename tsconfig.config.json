@@ -6,7 +6,8 @@
     "cypress.config.*",
     "src/**/*.ts",
     "src/**/*.vue",
-    "test/**/*.ts"
+    "test/**/*.ts",
+    "src/components/index.ts"
   ],
   "compilerOptions": {
     "composite": true,

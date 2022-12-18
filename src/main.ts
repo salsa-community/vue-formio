@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 
 import * as bootstrapVueConfig from "./config/config-bootstrap-vue";
-import { Form, FormBuilder } from "./components";
+import { Form, FormBuilder } from "vue-formiojs";
 
 import "./assets/scss/global.scss";
 import "./assets/scss/vendor.scss";

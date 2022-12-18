@@ -27,7 +27,6 @@
               url="http://localhost:9000/forms"
               form=""
               submission=""
-              :options="options"
               language="en"
             ></form-io>
           </div>

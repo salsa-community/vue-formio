@@ -1,6 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "module": "esnext",
+  "outDir": "dist",
+  "declaration": true,
+  "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
