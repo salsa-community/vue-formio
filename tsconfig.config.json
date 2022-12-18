@@ -1,31 +1,32 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.node.json",
   "include": [
+    "src/components/index.ts",
     "vite.config.*",
     "vitest.config.*",
     "cypress.config.*",
     "src/**/*.ts",
     "src/**/*.vue",
-    "test/**/*.ts",
-    "src/components/index.ts"
+    "test/**/*.ts"
   ],
   "compilerOptions": {
     "composite": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
     "types": ["node"],
     "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "noImplicitAny": false,
     "strictNullChecks": false,
-    "target": "es5",
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
-    "lib": ["es7", "dom"],
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "strict": true,
     "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
     "outDir": "lib",
     "paths": {
