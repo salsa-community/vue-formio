@@ -8,7 +8,7 @@ import FormioForm from "formiojs/Form";
 import Formio from "formiojs/Formio";
 
 @Component
-export default class Form extends Vue {
+export class Form extends Vue {
   formio?: Formio;
 
   @Prop()

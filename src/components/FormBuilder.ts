@@ -7,7 +7,7 @@ import Components from "formiojs/components/Components";
 Components.setComponents(AllComponents);
 
 @Component
-export default class FormBuilder extends Vue {
+export class FormBuilder extends Vue {
   builder?: any;
   builderReady?: Promise<any>;
 
