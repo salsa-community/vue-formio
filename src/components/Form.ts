@@ -9,7 +9,7 @@ import Formio from "formiojs/Formio";
 
 @Component
 export class Form extends Vue {
-  formio?: Formio;
+  formio?: any;
 
   @Prop()
   src?: string;
@@ -100,7 +100,7 @@ export class Form extends Vue {
       } else if (this.form) {
         resolve(
           new FormioForm(this.$refs.formio, this.form, this.options).ready
-            .then((formio: Formio): Formio => {
+            .then((formio: any): any => {
               this.formio = formio;
               this.formio.form = this.form;
 
