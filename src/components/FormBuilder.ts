@@ -72,7 +72,7 @@ export class FormBuilder extends Vue {
           )
         ) {
           args[0] = "change";
-          this.$emit.apply(this, ["", args]);
+          this.$emit.apply(this, [args[0], this.builder.instance.schema]);
         }
       });
     });
